@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: github-repo-reader
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+github:
+  repo-owner: "abusaeed2433"
+  repo-name: "JavaInREADME"
+  access-token: ${GITHUB_PERSONAL_ACCESS_TOKEN}
